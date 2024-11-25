@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados Coloridos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #333;
+        }
+
+        /* Container que vai envolver todos os quadrados */
+        #container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 quadrados por linha */
+            grid-template-rows: repeat(5, 1fr); /* 5 quadrados por coluna */
+            gap: 0;
+            width: 600px;
+            height: 600px;
+        }
+
+        /* Estilo dos quadrados */
+        .quadrado {
+            background-color: #ff00ff; /* Cor inicial */
+            border: 1px solid black;
+            width: 100%; /* Largura ajustável dentro da grid */
+            height: 100%; /* Altura ajustável dentro da grid */
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de hover para todos os quadrados */
+        .quadrado:hover {
+            background-color: #ffcc00; /* Cor de hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- 25 quadrados para formar o quadrado maior -->
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+</body>
+</html>
